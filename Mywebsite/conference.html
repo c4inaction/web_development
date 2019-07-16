@@ -3,11 +3,101 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <title></title>
+    <title>HTML PDF</title>
+	<link rel="stylesheet" href="style-conference.css">
 </head>
 <body>
+	<div class="topnav">
+		<a class="active" href="index.html">Home</a>
+		<a href="profession.html">Profession</a>
+		<a href="work_experience.html">Work</a>
+		<a href="contact.html">Contact</a>
+		<a href="about.html">About</a>
+        <a href="conference.html">Confrence</a>
+	</div>
     <div id="title_pic">
-        img src="images\logo.png" alt="Michael's Image" width="479" height="180">
+        <img src="images\logo.png" alt="Michael's Image" width="479" height="180">
     </div>
+	<div id="main_text">
+	<h1 class="center-main-text"> HTML5 Day conference</h1>
+	<br>
+	<p class="center-second-text">Petra, Jordan. November, 4th 2020</p>
+	</div>
+	<img src="images\animation.gif" alt="animation"width="300" height="300">
+	<br>
+	<br>
+	<p class="center-second-text"> Video in a Loop</p>
+
+		<video width="300" height="300" controls loop>
+		<source src="resources\animation.mp4" type="video/mp4">
+		Your browser does not support the video tag.
+		</video>
+	<h1 class="center-main-text"> The conference in images </h2>
+	<p class="center-second-text">image List</p>
+	<br>
+	<div id="pic_list">
+		<ul>
+			<li class="service-list">
+				<a href=""><img src="images\event1.jpg" alt="Event1" class="alignnone size-full wp-image-156" /></a>
+				<h3>Event 1</h3>
+				<a href=""><img src="images\event2.jpg" alt="Event2" class="alignnone size-full wp-image-156" /></a>
+				<h3>Event 2</h3>
+				<a href=""><img src="images\event3.jpg" alt="Event3" class="alignnone size-full wp-image-156" /></a>
+				<h3>Event 3</h3>
+				<h1>Listen to the Welcome Message</h1>
+				<br>
+				<audio controls="controls">
+					<source src="resources\welcome.mp3" type="audio/mpeg">
+					Your browser does not support the audio element.
+				</audio>
+				<h1 class="center-main-text"> About Petra </h2>
+				<video width="300" height="300" controls loop>
+					<source src="resources\movie.mp4" type="video/mp4">
+					Your browser does not support the video tag.
+				</video>
+				<h1>Schedule</h1>
+			</li>
+			<p class="center-second-text"> Table with spanned cells</p>
+			<p style="margin-left:60%;"> Conference Schedule by Room</p>
+			<!-- after this will be the table content code -->
+			<table style="width:50%;margin-left:45%">
+				<tr>
+					<th>Time</th>
+					<th>Conference Name</th> 
+					<th>Room Name</th>
+				</tr>
+				<tr>
+					<td>9am</td>
+					<td>Keynote</td>
+					<td>Indiana Jones</td>
+				</tr>
+				<tr>
+					<td>12pm</td>
+					<td>Lunch</td>
+					<td>Restaurant</td>
+				</tr>
+				<tr>
+					<td>2pm</td>
+					<td>CSS Training</td>
+					<td>Indiana Jones</td>
+				</tr>
+				<tr>
+					<td rowspan="2">4pm</td>
+					<td rowspan="2">JavaScript Training</td>
+					<td>Indiana Jones</td>
+				</tr>
+				<tr>
+					<td>Harrison Ford</td>
+				
+				</tr>
+				<tr>
+					<td>9pm</td>
+					<td colspan="2">End of the conference</td>
+				</tr>
+			</table>
+			<p style="margin-left:60%;"> If you have any questions, contact us on Twitter.</p>
+		</ul>
+	</div>
+
 </body>
 </html>
