@@ -1,87 +1,16 @@
-#title_pic {
-  display: block;
-  margin-left: Auto;
-  margin-right: Auto;
-  width: 50%;
-}
-.center-main-text {
-	color:white;
-	margin-left: 32%;
-	margin-right: Auto;
-	width: Auto
-}
-.center-second-text {
-	color:white;
-	margin-left: 42%;
-	margin-right: Auto;
-	width: Auto
-}
-.center-inner-text {
-	color:white;
-	margin-left: 0px;
-	margin-right: 0px;
-	width: 40%
-}
-img {
-	display: block;
-	margin-left: Auto;
-	margin-right: Auto;
-	width: Auto
-}
-video {
-	display: block;
-	margin-left: Auto;
-	margin-right: Auto;
-	width: Auto
-}
-
-
-#pic_list {
-	display: flex;
-	align-items: center;
-}
-.service-list {
-    list-style-type: none;
-    margin-left:300px;
-    padding-left:0px;
-    float: left;
-    display: inline-block;
-}
-
-
-.service-list p {
-    text-align: right; 
-    margin: 0; 
-    padding: 0;
-}
-
-/* under this message will be the table code */
-
-table, th, td {
-  border: 1px solid black;
-  border-collapse: collapse;
-}
-th, td {
-  padding: 5px;
-}
-th {
-  text-align: left;
-}
-/* under this will be the back ground animation and design */
-
 /*body {background-color: #red;}
 h1   {color: Blue;}
 p    {color: red;}
 */
 html {
-	background-image: url("images/background.jpg");
+	background-color: #262626;
 }
 body {
-	 background-image: url("images/main_background.jpg");
-	 font-family: "Work Sans", Arial, sans-serif;
-	 font-size: 18px;
-	 line-height: 1.5;
-	 color: white;
+	background-color:#990000;
+  font-family: "Work Sans", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  color: black;
 /*  background-image: url(me.png);
   background-repeat: no-repeat;
   background-position: right top;
@@ -108,19 +37,19 @@ h2 {
 
 /* Add a black background color to the top navigation */
 .topnav {
-	background-color: clear;
-	overflow: hidden;
-	text-align: center;
-	padding: 20px 20px 20px 20px;
-	position: -webkit-sticky;
-	position: sticky;
-	top:0;
+  background-color: Black;
+  overflow: hidden;
+  text-align: center;
+  padding: 20px 20px 20px 20px;
+  position: -webkit-sticky;
+  position: sticky;
+  top:0;
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
   /*float: left;*/
-  color: white;
+  color: #f2f2f2;
   text-align: center;
   padding: 20px 20px;
   text-decoration: none;
@@ -136,7 +65,7 @@ h2 {
 
 /* Add a color to the active/current link */
 .topnav a.active {
-
+  background-color: #660000;
   color: white;
   font-weight: bold;
 }
@@ -221,4 +150,4 @@ input[type=submit]:hover {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
-}+-
+}

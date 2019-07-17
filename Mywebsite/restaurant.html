@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Profession</title>
+	<link rel="stylesheet" href="style-restaurant.css">
+</head>
+<body>
+	<div class="topnav">
+			<a class="active" href="index.html">My Profile</a>
+			<a href="restaurant.html">My restaurant</a>
+			<a href="work_experience.html">Work</a>
+			<a href="contact.html">Contact</a>
+			<a href="about.html">About</a>
+			<a href="conference.html">Confrence</a>
+		</div>
+	<br>
+	<div class="welcome-message">
+		<h1> welcome to My restaurant</h1>
+	</div>
+	<!----------------------------------------------------------dropdown---->
+	<div class="dropdown">
+	  <button onclick="myFunction()" class="dropbtn">Food Menu</button>
+	  <div id="myDropdown" class="dropdown-content">
+		<a href="Drinks.html">Drinks</a>
+		<a href="Soups.html">Soups</a>
+		<a href="main-Dishes.html">Main Dishes</a>
+	  </div>
+	</div>
+	<script>
+	/* When the user clicks on the button, 
+	toggle between hiding and showing the dropdown content */
+	function myFunction() {
+	  document.getElementById("myDropdown").classList.toggle("show");
+	}
+
+	// Close the dropdown if the user clicks outside of it
+	window.onclick = function(event) {
+	  if (!event.target.matches('.dropbtn')) {
+		var dropdowns = document.getElementsByClassName("dropdown-content");
+		var i;
+		for (i = 0; i < dropdowns.length; i++) {
+		  var openDropdown = dropdowns[i];
+		  if (openDropdown.classList.contains('show')) {
+			openDropdown.classList.remove('show');
+		  }
+		}
+	  }
+	}
+	</script>
+
+	<!----------------------------------------------------dropdown ends ---->
+	<div class="container">
+	  <div class="group-header">
+		<span>12 oz.</span>
+		<span>34 oz.</span>
+	  </div>
+  
+	  <h3>
+		<span>Fancy Food Item</span>
+		<span>25</span>
+		<span>56</span>
+	  </h3>
+	  <p>A well-written, appetite inspiring description that aims to inform the information and food deprived consumer</p>
+	  <h3>
+		<span>Fancy Food Item</span>
+		<span>25</span>
+		<span>56</span>
+	  </h3>
+	  <p>A well-written, appetite inspiring description that aims to inform the information and food deprived consumer</p>
+	  <h3>
+		<span>Fancy Food Item</span>
+		<span>25</span>
+		<span>56</span>
+	  </h3>
+	  <p>A well-written, appetite inspiring description that aims to inform the information and food deprived consumer</p>
+	</div>
+	<script>
+		$('h3 span:first-child').after("<span class=\"dots\"> </span>");
+	</script>
+</body>
+</html>

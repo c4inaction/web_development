@@ -1,150 +1,223 @@
+#title_pic {
+  display: block;
+  margin-left: Auto;
+  margin-right: Auto;
+  width: 50%;
+}
+.center-main-text {
+	color:white;
+	margin-left: 32%;
+	margin-right: Auto;
+	width: Auto
+}
+.center-second-text {
+	color:white;
+	margin-left: 42%;
+	margin-right: Auto;
+	width: Auto
+}
+.center-inner-text {
+	color:white;
+	margin-left: 0px;
+	margin-right: 0px;
+	width: 40%
+}
+img {
+	display: block;
+	margin-left: Auto;
+	margin-right: Auto;
+	width: Auto
+}
+video {
+	display: block;
+	margin-left: Auto;
+	margin-right: Auto;
+	width: Auto
+}
+
+
+#pic_list {
+	display: flex;
+	align-items: center;
+}
+.service-list {
+    list-style-type: none;
+    margin-left:300px;
+    padding-left:0px;
+    float: left;
+    display: inline-block;
+}
+
+
+.service-list p {
+    text-align: right; 
+    margin: 0; 
+    padding: 0;
+}
+
+/* under this message will be the table code */
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 5px;
+}
+th {
+  text-align: left;
+}
+/* under this will be the back ground animation and design */
+
 /*body {background-color: #red;}
 h1   {color: Blue;}
 p    {color: red;}
 */
 html {
-    background-color: #262626;
+	background-image: url("images/background.jpg");
 }
-
 body {
-    background-color: #990000;
-    font-family: "Work Sans", Arial, sans-serif;
-    font-size: 18px;
-    line-height: 1.5;
-    color: black;
-    /*  background-image: url(me.png);
+	 background-image: url("images/main_background.jpg");
+	 font-family: "Work Sans", Arial, sans-serif;
+	 font-size: 18px;
+	 line-height: 1.5;
+	 color: white;
+/*  background-image: url(me.png);
   background-repeat: no-repeat;
   background-position: right top;
   background-attachment: fixed;
   background-size: 20% 10%;*/
-    position: relative;
-    padding: 50px;
-    margin-left: 5%;
-    margin-right: 5%;
-    height: inherit;
+  position: relative;
+  padding: 50px;
+  margin-left: 5%;
+  margin-right: 5%;
+  height: inherit;
+  
+  
 }
 
 h2 {
-    background-color: #660000;
-    padding: 30px;
+	background-color: #660000
+;
+	padding:30px;
 }
 
 #education {
-    padding: 30px;
+	padding:30px;
 }
 
 /* Add a black background color to the top navigation */
 .topnav {
-    background-color: Black;
-    overflow: hidden;
-    text-align: center;
-    padding: 20px 20px 20px 20px;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
+	background-color: clear;
+	overflow: hidden;
+	text-align: center;
+	padding: 20px 20px 20px 20px;
+	position: -webkit-sticky;
+	position: sticky;
+	top:0;
 }
 
-    /* Style the links inside the navigation bar */
-    .topnav a {
-        /*float: left;*/
-        color: #f2f2f2;
-        text-align: center;
-        padding: 20px 20px;
-        text-decoration: none;
-        font-size: 20px;
-        /*text-shadow: 1px 1px #ffff00;*/
-    }
+/* Style the links inside the navigation bar */
+.topnav a {
+  /*float: left;*/
+  color: white;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+  font-size: 20px;
+  /*text-shadow: 1px 1px #ffff00;*/
+}
 
-        /* Change the color of links on hover */
-        .topnav a:hover {
-            background-color: #ddd;
-            color: DarkOliveGreen;
-        }
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: DarkOliveGreen;
+}
 
-        /* Add a color to the active/current link */
-        .topnav a.active {
-            background-color: #660000;
-            color: white;
-            font-weight: bold;
-        }
+/* Add a color to the active/current link */
+.topnav a.active {
+  color: white;
+  font-weight: bold;
+}
 
 ul {
-    list-style-type: square;
+	list-style-type: square;
 }
 
 table, tr, th, td {
-    border: solid black;
-    border-collapse: collapse;
-    padding: 10px;
+	border: solid black ;
+	border-collapse: collapse;
+	padding: 10px;
+	
 }
 
-    table th {
-        background-color: black;
-        color: white;
-    }
+table th{
+	background-color:black;
+	color: white;
+}
 
-    tr:hover {
-        background-color: gray;
-        font-weight: bold;
-    }
+tr:hover{
+	background-color:gray;
+	font-weight:bold;
+}
 
 div.fixed {
-    position: fixed;
-    margin: auto;
-    bottom: 0;
-    text-align: center;
-    vertical-align: center;
-    width: 300px;
-    height: 100px;
-    background-color: pink;
-    border: 3px solid #73AD21;
+  position: fixed;
+  margin: auto;
+  bottom: 0;
+  text-align: center;
+  vertical-align: center;
+  width: 300px;
+  height:100px;
+  background-color: pink;
+  border: 3px solid #73AD21;
 }
 
-img {
-    float: center;
+img{
+	float:center;
 }
 
-#aboutMe {
-    overflow: auto;
-    vertical-align: middle;
+#aboutMe{
+	overflow:auto;
+	vertical-align:middle;
 }
 
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
-    width: 100%; /* Full width */
-    padding: 20px; /* Some padding */
-    border: 2px solid #ccc; /* Gray border */
-    border-radius: 10px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 10px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  width: 100%; /* Full width */
+  padding: 20px; /* Some padding */  
+  border: 2px solid #ccc; /* Gray border */
+  border-radius: 10px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 10px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
 /* Style the submit button with a specific background color etc */
 input[type=submit] {
-    width: 100%;
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 1.2em;
+	width:100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size:1.2em;
 }
 
-    /* When moving the mouse over the submit button, add a darker green color */
-    input[type=submit]:hover {
-        background-color: #45a049;
-        font-weight: bold;
-    }
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+  font-weight:bold;
+}
 
 /* Add a background color and some padding around the form */
 .container {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 20px;
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-}
+	margin-top:20px;
+	margin-bottom:20px;
+	padding:20px;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}+-
